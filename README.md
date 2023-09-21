@@ -13,13 +13,13 @@ Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 versi
 
 1. Copy the all the files in repository present in the directory propagation/model to ns-3 mainline src/propagation/model
 2. Copy the all the files in repository present in the directory propagation/example to ns-3 mainline src/propagation/examples
-3. On ns-3 mainline in the directory src/propagation add the following lines to the CMakeLists.txt file under:
-   <br>SOURCE_FILES</br>
-   <br>model/nyu-channel-condition-model.cc</br>
-   <br>model/nyu-propagation-loss-model.cc</br>
-   HEADER_FILES
-    <br>model/nyu-channel-condition-model.h</br>
-    <br>model/nyu-propagation-loss-model.h</br>
+3. On ns-3 mainline in the directory src/propagation add the following lines to the CMakeLists.txt file under:<br>
+   <br>SOURCE_FILES
+   <br>model/nyu-channel-condition-model.cc
+   <br>model/nyu-propagation-loss-model.cc
+   <br>HEADER_FILES
+    <br>model/nyu-channel-condition-model.h
+    <br>model/nyu-propagation-loss-model.h
 4. Copy the all the files in repository present in the directory spectrum/model to ns-3 mainline src/spectrum/model
 5. Copy the all the files in repository present in the directory spectrum/example to ns-3 mainline src/spectrum/examples
 6. On ns-3 mainline in the directory src/spectrum add the following lines to the CMakeLists.txt file under
