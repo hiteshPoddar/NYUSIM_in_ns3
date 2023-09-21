@@ -1,23 +1,31 @@
 /*
- * Copyright (c) 2019 SIGNET Lab, Department of Information Engineering,
- * University of Padova
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation;
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- */
+*	Copyright (c) 2023 New York University and NYU WIRELESS
+*
+*   Permission is hereby granted, free of charge, to any person obtaining a copy of this
+*	software and associated documentation files (the “Software”), to deal in the Software
+*	without restriction, including without limitation the rights to use, copy, modify,
+*	merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+*	persons to whom the Software is furnished to do so, subject to the following conditions:
+*	
+*	The above copyright notice and this permission notice shall be included in all copies
+*	or substantial portions of the Software. Users are encouraged to cite NYU WIRELESS 
+*	publications regarding this work.
+*	
+*	THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+*	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+*	OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+*	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+*	BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+*	AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+*	IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+*	THE SOFTWARE.
+*
+* Author: Hitesh Poddar <hiteshp@nyu.edu>
+*     
+*/
 
 /**
- * This example shows how to configure the 3GPP channel model classes to
+ * This example shows how to configure the NYUSIM channel model classes to
  * compute the SNR between two nodes.
  * The simulation involves two static nodes which are placed at a certain
  * distance from each other and communicates through a wireless channel at
@@ -179,7 +187,7 @@ main(int argc, char* argv[])
     double distance = 10.0;       // distance between tx and rx nodes in meters
     uint32_t simTime = 1000;      // simulation time in milliseconds
     uint32_t timeRes = 10;        // time resolution in milliseconds
-    std::string scenario = "InF"; // 3GPP propagation scenario
+    std::string scenario = "Uma"; // NYUSIM propagation scenario
 
     Config::SetDefault("ns3::NYUChannelModel::UpdatePeriod",
                        TimeValue(MilliSeconds(1))); // update the channel at each iteration
