@@ -54,7 +54,8 @@ GHz and Implementation in ns-3</a> provides a detailed description of the implem
 for InH, RMa, and InF scenarios. In addition, we will also add spatial
 consistency-based models for NYUSIM in ns-3 and extend NYUSIM models above 150 GHz for 3GPP-listed scenarios.
 </p>
-<span class="green-large-text">About</span>
+
+# About
 <p class = "justified-text"> This module is being developed by <a href="https://wireless.engineering.nyu.edu/">NYU WIRELESS </a>
 and <a href="https://www.sharplabs.com/">Sharp Laboratories of America</a>. This work is supported and funded by the NYU WIRELESS Industrial Affiliates Program, and the commissioned research (No.04201) from the National Institute of Information and Communications Technology (NICT), Japan. </p>
 
