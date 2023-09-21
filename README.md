@@ -1,6 +1,7 @@
 # NYUSIM_in_ns3
 Release v1.0 for NYUSIM in ns-3
 
+# Usage
 Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 version 3.39)
 
 1. Copy the all the files in repository present in the directory propagation/model to ns-3 mainline src/propagation/model
@@ -24,7 +25,7 @@ Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 versi
 7. You can run the example files from Step 2 or Step 5 to see the usage of NYUSIM channel model.
 
 
-<span class="green-large-text">References</span>
+# References
 
 <p class = "justified-text"> The following describes in detail the implementation of NYUSIM in n3:</p>
 <ul>
@@ -40,7 +41,7 @@ GHz and Implementation in ns-3</a> provides a detailed description of the implem
 </p>
 
 
-<span class="green-large-text">Future Work</span>
+# Future Work
 
 <p class = "justified-text"> We plan to implement NYUSIM-based blockage models for all 3GPP listed scenarios and create LOS probability models
 for InH, RMa, and InF scenarios. In addition, we will also add spatial
@@ -50,15 +51,15 @@ consistency-based models for NYUSIM in ns-3 and extend NYUSIM models above 150 G
 <p class = "justified-text"> This module is being developed by <a href="https://wireless.engineering.nyu.edu/">NYU WIRELESS </a>
 and <a href="https://www.sharplabs.com/">Sharp Laboratories of America</a>. This work is supported and funded by the NYU WIRELESS Industrial Affiliates Program, and the commissioned research (No.04201) from the National Institute of Information and Communications Technology (NICT), Japan. </p>
 
-<span class="green-large-text">Authors</span>
+# Authors
 <p class = "justified-text"> 
 NYUSIM in ns-3 is the result of the development effort carried out by <ul>
     <li>Hitesh Poddar, NYU WIRELESS</li>
     <li>Tomoki Yoshimura, Sharp Laboratories of America</li>
 </ul>
 
-<span class="green-large-text">License</span>
-<br></br>
+# License
+
 <p class = "justified-text"> Copyright (c) 2023 New York University and NYU WIRELESS
 <p class = "justified-text"> Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 <p class = "justified-text">
