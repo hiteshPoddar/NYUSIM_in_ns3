@@ -11,25 +11,26 @@ Advantage of using NYUSIM
 # How to Use NYUSIM in ns-3
 Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 version 3.39)
 
-1. Copy the all the files in repository present in the directory propagation/model to ns-3 mainline src/propagation/model
-2. Copy the all the files in repository present in the directory propagation/example to ns-3 mainline src/propagation/examples
-3. On ns-3 mainline in the directory src/propagation add the following lines to the CMakeLists.txt file under:<br>
+1. Download/Clone ns-3 mainline on your local machine. NYUSIM files are tested on ns-3 version 3.39 thus users are recommended to download ns-3 version 3.39.
+2. Copy the all the files from the current repository present in the directory propagation/model to ns-3 mainline src/propagation/model
+3. Copy the all the files from the current repository present in the directory propagation/example to ns-3 mainline src/propagation/examples
+4. On ns-3 mainline in the directory src/propagation add the following lines to the CMakeLists.txt file under:<br>
    SOURCE_FILES
    <br>model/nyu-channel-condition-model.cc
    <br>model/nyu-propagation-loss-model.cc
    <br>HEADER_FILES
     <br>model/nyu-channel-condition-model.h
     <br>model/nyu-propagation-loss-model.h
-4. Copy the all the files in repository present in the directory spectrum/model to ns-3 mainline src/spectrum/model
-5. Copy the all the files in repository present in the directory spectrum/example to ns-3 mainline src/spectrum/examples
-6. On ns-3 mainline in the directory src/spectrum add the following lines to the CMakeLists.txt file under: <br>
+5. Copy the all the files from the current repository present in the directory spectrum/model to ns-3 mainline src/spectrum/model
+6. Copy the all the files from the current repository present in the directory spectrum/example to ns-3 mainline src/spectrum/examples
+7. On ns-3 mainline in the directory src/spectrum add the following lines to the CMakeLists.txt file under: <br>
    SOURCE_FILES
     <br>model/nyu-channel-model.cc
     <br>model/nyu-spectrum-propagation-loss-model.cc
    <br>HEADER_FILES
    <br>model/nyu-channel-model.cc
     <br>model/nyu-spectrum-propagation-loss-model.cc
-7. You can run the example files from Step 2 or Step 5 to see the usage of NYUSIM channel model from the ns-3-dev folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
+8. You can run the example files from Step 2 or Step 5 to see the usage of NYUSIM channel model from the ns-3-dev folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
 
 
 # References
