@@ -30,9 +30,40 @@ Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 versi
    <br>HEADER_FILES
    <br>model/nyu-channel-model.h
     <br>model/nyu-spectrum-propagation-loss-model.h
-8. You can run the example files from Step 2 or Step 5 to see the usage of NYUSIM channel model from the ns-3-dev folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
+8. You can run the example files from Step 3 or Step 6 to see the usage of NYUSIM channel model from the ns-3-dev folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
 
+# Steps to Use NYUSIM in ns3-mmWave module
+Steps to use NYUSIM in ns-3 on ns3-mmWave module: (Successfully Tested on ns3-mmWave module version 3.38)
 
+1. Download/Clone <a href="https://github.com/nyuwireless-unipd/ns3-mmwave">ns3-mmWave module</a> mainline on your local machine. NYUSIM files are tested on ns3-mmWave module version 3.38 thus users are recommended to download ns3-mmWave module version 3.38.
+2. Copy all the files from the current repository present in the directory propagation/model to ns3-mmwave/src/propagation/model
+3. Copy all the files from the current repository present in the directory propagation/example to ns3-mmwave/src/propagation/examples
+4. On ns3-mmWave module mainline in the directory ns3-mmwave/src/propagation add the following lines to the CMakeLists.txt file under:<br>
+   SOURCE_FILES
+   <br>model/nyu-channel-condition-model.cc
+   <br>model/nyu-propagation-loss-model.cc
+   <br>HEADER_FILES
+    <br>model/nyu-channel-condition-model.h
+    <br>model/nyu-propagation-loss-model.h
+5. Copy all the files from the current repository present in the directory spectrum/model to ns3-mmwave/src/spectrum/model
+6. Copy all the files from the current repository present in the directory spectrum/example to ns3-mmwave/src/spectrum/examples
+7. On ns3-mmWave module mainline in the directory src/spectrum add the following lines to the CMakeLists.txt file under: <br>
+   SOURCE_FILES
+    <br>model/nyu-channel-model.cc
+    <br>model/nyu-spectrum-propagation-loss-model.cc
+   <br>HEADER_FILES
+   <br>model/nyu-channel-model.h
+    <br>model/nyu-spectrum-propagation-loss-model.h
+8. You can run the example files from Step 3 or Step 6 to see the usage of NYUSIM channel model from the ns3-mmWave module folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
+9. To use the NYUSIM channel model with ns3-mmWave module: copy the file from the current repository present in mmwave/helper to ns3-mmwave/src/mmwave/helper
+10. Add the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
+SOURCE_FILES
+    <br>model/mmwave-helper-nyusim.cc
+11. Comment the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
+SOURCE_FILES
+    <br> # model/mmwave-helper.cc
+12. Now you can run any example present in ns3-mmwave module in the folder ns3-mmwave/src/mmwave/examples. The example file will automatically use the NYUSIM channel model under the hood.
+    
 # References
 
 <p class = "justified-text"> The following describes in detail the implementation of NYUSIM in n3:</p>
