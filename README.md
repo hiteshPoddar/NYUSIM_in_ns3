@@ -67,8 +67,8 @@ SOURCE_FILES
     <br> # model/mmwave-helper.cc
 11. Now you can run any example present in ns3-mmwave module in the folder ns3-mmwave/src/mmwave/examples. The example file will automatically use the NYUSIM channel model under the hood.
 For example: Copy the file ns3-mmwave/src/mmwave/examples/mmwave-simple-epc.cc to ns3-mmwave/scratch and run the following command: <br>
-NS_LOG=* ./ns3 run scratch/mmwave-simple-epc.cc > nyutest.out 2>&1
-Once execution is over you will see a file named "nyutest.out" in the ns3-mmwave folder. Open the file using any text editor and search for the string "NYUChannelModel". This will show the channel generation debug prints for NYUSIM channel model.
+NS_LOG=* ./ns3 run scratch/mmwave-simple-epc.cc > nyutest.out 2>&1 <br>
+Once execution is over you will see a file named "nyutest.out" in the ns3-mmwave folder. <br> Open the file using any text editor and search for the string "NYUChannelModel". This will show the channel generation debug prints for NYUSIM channel model.
     
 # References
 
