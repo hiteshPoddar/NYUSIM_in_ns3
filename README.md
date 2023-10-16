@@ -8,7 +8,7 @@ NYUSIM is a groundbreaking open-source sub-THz and mmWave wireless channel simul
 Advantage of using NYUSIM
 <p class = "justified-text">Currently, ns-3 uses the 3GPP TR 38.901 SCM to model the wireless channel for the frequency range of 0.5-100 GHz for all 3GPP-listed scenarios namely urban microcell (UMi), urban microcell (UMa), rural microcell (RMa), indoor hotspot (InH), and indoor factory (InF). Research conducted at NYU WIRELESS shows that 3GPP SCM provides an oversimplification of the actual wireless channel in outdoor scenarios. In addition, the limited frequency range of the 3GPP SCM does not allow researchers to study future networks above 100 GHz. Furthermore, there needs to be more understanding of how the wireless channel model impacts overall network performance as ns-3 users are restricted to using only the 3GPP SCM for simulations. To enable the research community to explore and analyze networks of the future based on real-world channel measurement-based models that cover the frequency range of 0.5-150 GHz in 3GPP-listed scenarios, we present the implementation of drop-based NYUSIM in ns-3.</p>
 
-# How to Use NYUSIM in ns-3
+# Steps to Use NYUSIM in ns-3 mainline
 Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 version 3.39)
 
 1. Download/Clone ns-3 mainline on your local machine. NYUSIM files are tested on ns-3 version 3.39 thus users are recommended to download ns-3 version 3.39.
