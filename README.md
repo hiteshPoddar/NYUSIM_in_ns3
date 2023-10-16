@@ -54,19 +54,18 @@ Steps to use NYUSIM in ns-3 on ns3-mmWave module: (Successfully Tested on ns3-mm
    <br>HEADER_FILES
    <br>model/nyu-channel-model.h
     <br>model/nyu-spectrum-propagation-loss-model.h
-8. You can run the example files from Step 3 or Step 6 to see the usage of NYUSIM channel model from the ns3-mmWave module folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
-9. To use the NYUSIM channel model with ns3-mmWave module: copy the file from the current repository present in mmwave/helper to ns3-mmwave/src/mmwave/helper. <br>
+8. To use the NYUSIM channel model with ns3-mmWave module: copy the file from the current repository present in mmwave/helper to ns3-mmwave/src/mmwave/helper. <br>
 In the mmwave-helper-nyusim.cc file the parameters that need to be changed are:
 <br> a. Large scale propagation model. Default is "NYUUmaPropagationLossModel". Supported are NYUUmaPropagationLossModel,NYUUmiPropagationLossModel,NYURmaPropagationLossModel,NYUInHPropagationLossModel,NYUInFPropagationLossModel
 <br> b. The scenario for NYUSIM channel generation. Default is "Uma". Supported are Uma,Umi,Rma,InH and InF.
 <br> Note large scale propagation model and scenario should be the same,i.e, if you select "NYUUmiPropagationLossModel" then set scenario as "Umi".
-11. Add the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
+9. Add the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
 SOURCE_FILES
     <br>model/mmwave-helper-nyusim.cc
-12. Comment the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
+10. Comment the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
 SOURCE_FILES
     <br> # model/mmwave-helper.cc
-13. Now you can run any example present in ns3-mmwave module in the folder ns3-mmwave/src/mmwave/examples. The example file will automatically use the NYUSIM channel model under the hood.
+11. Now you can run any example present in ns3-mmwave module in the folder ns3-mmwave/src/mmwave/examples. The example file will automatically use the NYUSIM channel model under the hood.
 For example: Copy the file ns3-mmwave/src/mmwave/examples/mmwave-simple-epc.cc to ns3-mmwave/scratch and run the following command: <br>
 NS_LOG=* ./ns3 run scratch/mmwave-simple-epc.cc > nyutest.out 2>&1
 Once execution is over you will see a file named "nyutest.out" in the ns3-mmwave folder. Open the file using any text editor and search for the string "NYUChannelModel". This will show the channel generation debug prints for NYUSIM channel model.
