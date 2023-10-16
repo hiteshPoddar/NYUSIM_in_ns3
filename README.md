@@ -28,8 +28,8 @@ Steps to use NYUSIM in ns-3 on ns-3 mainline: (Successfully Tested on ns-3 versi
     <br>model/nyu-channel-model.cc
     <br>model/nyu-spectrum-propagation-loss-model.cc
    <br>HEADER_FILES
-   <br>model/nyu-channel-model.cc
-    <br>model/nyu-spectrum-propagation-loss-model.cc
+   <br>model/nyu-channel-model.h
+    <br>model/nyu-spectrum-propagation-loss-model.h
 8. You can run the example files from Step 2 or Step 5 to see the usage of NYUSIM channel model from the ns-3-dev folder using: <br> ./ns3 run src/spectrum/examples/nyu-channel-example
 
 
