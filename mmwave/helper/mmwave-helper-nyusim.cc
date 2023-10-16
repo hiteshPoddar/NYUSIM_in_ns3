@@ -401,6 +401,9 @@ MmWaveHelper::MmWaveChannelModelInitialization(void)
                 nyuSplm->SetChannelModelAttribute(
                     "RfBandwidth",
                     DoubleValue(phyMacCommon->GetBandwidth()));
+                nyuSplm->SetChannelModelAttribute(
+                    "Scenario",
+                    StringValue ("Uma"));
                 // the NYUSpectrumPropagationLossModel must have the same ChannelConditionModel
                 // as the propagation loss model instace
                 if (ccm) // the channel condition model was created using the factory
