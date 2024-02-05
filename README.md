@@ -61,10 +61,10 @@ In the mmwave-helper-nyusim.cc file the parameters that need to be changed are:
 <br> Note large scale propagation model and scenario should be the same,i.e, if you select "NYUUmiPropagationLossModel" then set scenario as "Umi".
 9. Add the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
 SOURCE_FILES
-    <br>model/mmwave-helper-nyusim.cc
+    <br>helper/mmwave-helper-nyusim.cc
 10. Comment the following line in the CMakeLists.txt file present in the ns3-mmwave/src/mmwave on your local machine : <br>
 SOURCE_FILES
-    <br> # model/mmwave-helper.cc
+    <br> # helper/mmwave-helper.cc
 11. Now you can run any example present in ns3-mmwave module in the folder ns3-mmwave/src/mmwave/examples. The example file will automatically use the NYUSIM channel model under the hood.
 For example: Copy the file ns3-mmwave/src/mmwave/examples/mmwave-simple-epc.cc to ns3-mmwave/scratch and run the following command: <br>
 NS_LOG=* ./ns3 run scratch/mmwave-simple-epc.cc > nyutest.out 2>&1 <br>
